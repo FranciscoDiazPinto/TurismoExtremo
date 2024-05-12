@@ -3,7 +3,9 @@ body {
 }
 
 /* Reparar el CSS de boostrap para que el contenido centrado no ocupe un 110% en width */
+/* Reparar el CSS de boostrap para que el contenido no quede pegado a la izquierda de la pantalla */
 .row.justify-content-center {
+    padding-left: 1%;
     max-width: 100%;
 }
 /* Margen para que el contenido de la pagina no este pegado a la barra de navegacion*/

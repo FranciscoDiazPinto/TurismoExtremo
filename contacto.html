@@ -47,6 +47,46 @@
       </div>
     </div>
   </nav>
+<!--formulario-->
+<div class="row justify-content-center">
+  <div class="col-lg-8 col-xl-6">
+    <form id="contactForm">
+      <div class="form-floating mb-3">
+        <input class="form-control" id="name" type="text" placeholder="Enter your name..." required />
+        <label for="name">Nombre</label>
+        <div class="invalid-feedback">Por favor introduzca un nombre.</div>
+      </div>
+      <div class="form-floating mb-3">
+        <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
+        <label for="email">Email </label>
+        <div class="invalid-feedback">Por favor introduzca un Email valido.</div>
+      </div>
+      <div class="form-floating mb-3">
+        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" required />
+        <label for="phone">Telefono</label>
+        <div class="invalid-feedback">Introduzca un numero de Telefono.</div>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+        <label for="message">Mensaje</label>
+        <div class="invalid-feedback">Por favor introduzxca su mensaje.</div>
+      </div>
+      <div class="d-none" id="submitSuccessMessage">
+        <div class="text-center mb-3">
+          <div class="fw-bolder">Mensaje enviado!</div> 
+        </div>
+      </div>
+      <div class="d-none" id="submitErrorMessage">
+        <div class="text-center text-danger mb-3">Error enviando el mensaje!</div>
+      </div>
+      <div class="d-grid">
+        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
 </body>
 
 <footer class="bg-dark py-4 mt-auto fixed-bottom">

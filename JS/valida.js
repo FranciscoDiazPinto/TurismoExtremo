@@ -11,23 +11,37 @@ const error = document.getElementById("warning-error");
 form.addEventListener("submit", e=>{
     e.preventDefault(); // Evita que el formulario se envie de forma automatica
     let errores = "";
+    let regexNombreApellido = /^[A-Za-z\s]+$/;
     // Validaciones para el nombre
     nombre.value = nombre.value.trim();
-    let regexNombre = /^[A-Za-z\s]+$/;
     if (nombre.value == '' || nombre.value == undefined) {
         alert("Please enter your name.");
-        errores += 'El no debe estar vacio <br>';
+        errores += 'El nombre no debe estar vacio <br>';
     }
     if (nombre.value.length < 3 || nombre.value.length > 20){
         alert("El nombre debe tener de 3-20 caracteres");
         errores += 'El nombre debe tener de 3-20 Caracteres <br>';
     }
-    if (!regexNombre.test(nombre.value)){
+    if (!regexNombreApellido.test(nombre.value)){
         alert("El nombre solo debe contener letras o espacios")
         errores += 'El nombre solo debe contener letras o espacios <br>'
     }
     // Validaciones para el apellido
+    apellido.value = apellido.value.trim();
+    if (apellido.value == '' || apellido.value == undefined) {
+        alert("Please enter your lastname.");
+        errores += 'El apellido no debe estar vacio <br>';
+    }
+    if (apellido.value.length < 3 || apellido.value.length > 20){
+        alert("El apellido debe tener de 3-20 caracteres");
+        errores += 'El apellido debe tener de 3-20 Caracteres <br>';
+    }
+    if (!regexNombreApellido.test(apellido.value)){
+        alert("El apellido solo debe contener letras o espacios")
+        errores += 'El apellido solo debe contener letras o espacios <br>'
+    }
     // Validaciones para el email
+    // Validaciones para telefono
     // Validaciones para el mensaje
     error.innerHTML = errores
 })

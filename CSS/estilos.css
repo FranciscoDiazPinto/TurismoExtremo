@@ -12,3 +12,7 @@ body {
 #navbar-header {
     margin-bottom: 10px;
 }
+
+.warning-error {
+    text-align: center;
+}

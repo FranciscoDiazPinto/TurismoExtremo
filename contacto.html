@@ -52,12 +52,12 @@
   <div class="col-lg-8 col-xl-6">
     <form id="contactForm">
       <div class="form-floating mb-3">
-        <input class="form-control" id="name" type="text" placeholder="Enter your name..." required />
+        <input class="form-control" id="name" type="text" placeholder="Enter your name..." pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" minlength="3" maxlength="20" required />
         <label for="name">Nombre</label>
         <div class="invalid-feedback">Por favor introduzca un nombre.</div>
       </div>
       <div class="form-floating mb-3">
-        <input class="form-control" id="name" type="text" placeholder="Enter your lastname..." required />
+        <input class="form-control" id="name" type="text" placeholder="Enter your lastname..." pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" minlength="3" maxlength="20" required />
         <label for="name">Apellido</label>
         <div class="invalid-feedback">Por favor introduzca un apellido.</div>
       </div>
@@ -67,12 +67,12 @@
         <div class="invalid-feedback">Por favor introduzca un Email valido.</div>
       </div>
       <div class="form-floating mb-3">
-        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" required />
+        <input class="form-control" id="phone" type="tel" placeholder="955552222" pattern="[0-9]+" title="955552222" minlength="9" maxlength="9" required />
         <label for="phone">Telefono</label>
         <div class="invalid-feedback">Introduzca un numero de Telefono.</div>
       </div>
       <div class="form-floating mb-3">
-        <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+        <textarea class="form-control" id="message" placeholder="Enter your message here..." maxlength="1000" style="height: 10rem" required></textarea>
         <label for="message">Mensaje</label>
         <div class="invalid-feedback">Por favor introduzxca su mensaje.</div>
       </div>

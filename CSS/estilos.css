@@ -6,3 +6,7 @@ body {
 .row.justify-content-center {
     max-width: 100%;
 }
+/* Margen para que el contenido de la pagina no este pegado a la barra de navegacion*/
+#navbar-header {
+    margin-bottom: 10px;
+}

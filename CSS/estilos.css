@@ -1,3 +1,8 @@
 body {
     background-color: aliceblue;
 }
+
+/* Reparar el CSS de boostrap para que el contenido centrado no ocupe un 110% en width */
+.row.justify-content-center {
+    max-width: 100%;
+}

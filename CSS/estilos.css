@@ -29,5 +29,10 @@ body {
   }
   
   footer {
-    margin-top: 40px;
+    margin-top: auto;
   }
+
+/* Reparar el CSS de boostrap para darle margen al contenedor */  
+.container {
+margin-bottom: 60px; 
+}

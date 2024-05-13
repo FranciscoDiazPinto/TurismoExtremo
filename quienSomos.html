@@ -49,28 +49,63 @@
     </div>
   </nav>
   <!-- Cartas de presentacion-->
-  <!--Hay que meter estas cartas a un carrusel-->
-  <h2 class="text-center">Quiénes somos</h2>
-  <section>
-    <div class="card text-center mx-auto" style="width: 18rem;">
-      <br>
-      <div class="square-container">
-        <img src="Imagenes/FranciscoDiaz.jpg" class="card-img-top rounded-circle mx-auto d-block" alt="..."
-          style="width:100px; height:100px; object-fit: cover;">
+  <!--CARRUSEL 2-->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <div class="card text-center mx-auto" style="width: 18rem;">
+          <br>
+          <div class="square-container">
+            <img src="Imagenes/FranciscoDiaz.jpg" class="card-img-top rounded-circle mx-auto d-block" alt="..."
+              style="width:100px; height:100px; object-fit: cover;">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Francisco Diaz</h5>
+            <p class="card-text">Diseñador Web</p>
+            <p class="small mb-2">Descripción de Francisco</p>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="https://web.whatsapp.com/send?phone=+56948484062&text=Hola Francisco!" class="social-icon"><img src="Imagenes/WhatsApp_icon.png" alt="Whatsapp"
+                  style="max-width: 25px;" class="img-fluid"></a>
+              <a href="#" target="_blank" class="social-icon"><img src="Imagenes/Instagram_icon.png" alt="Instagram"
+                  style="max-width: 25px;" class="img-fluid"></a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card-body">
-        <h5 class="card-title">Francisco Diaz</h5>
-        <p class="card-text">Diseñador Web</p>
-        <p class="small mb-2">Descripcion de Francisco</p>
-        <div class="d-flex justify-content-center align-items-center">
-          <a href="#" class="social-icon"><img src="Imagenes/WhatsApp_icon.png" alt="Whatsapp" style="max-width: 25px;"
-              class="img-fluid"></a>
-          <a href="#" class="social-icon"><img src="Imagenes/Instagram_icon.png" alt="Instagram" style="max-width: 25px;"
-              class="img-fluid"></a>
+      <div class="carousel-item" data-bs-interval="2000">
+        <div class="card text-center mx-auto" style="width: 18rem;">
+          <br>
+          <div class="square-container">
+            <img src="Imagenes/ItamarCTemporal.jpg" class="card-img-top rounded-circle mx-auto d-block" alt="..."
+              style="width:100px; height:100px; object-fit: cover;">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Itamar Carrasco</h5>
+            <p class="card-text">Diseñador Web</p>
+            <p class="small mb-2">Descripción de Itamar</p>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="https://web.whatsapp.com/send?phone=+56967869622&text=Hola Itamar!" target="_blank" class="social-icon"><img src="Imagenes/WhatsApp_icon.png" alt="Whatsapp"
+                  style="max-width: 25px;" class="img-fluid"></a>
+              <a href="https://www.instagram.com/system.calix/" target="_blank" class="social-icon"><img src="Imagenes/Instagram_icon.png" alt="Instagram"
+                  style="max-width: 25px;" class="img-fluid"></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <div class="carousel-indicators" style="position: relative;">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+  </div>
 </body>
 
 <!-- Footer-->

@@ -20,53 +20,63 @@ form.addEventListener("submit", e=>{
     nombre.value = nombre.value.trim();
     if (nombre.value == '' || nombre.value == undefined) {
         errores += 'El nombre no debe estar vacio <br>';
-    }
-    if (nombre.value.length < 3 || nombre.value.length > 20){
-        errores += 'El nombre debe tener de 3-20 Caracteres <br>';
-    }
-    if (!regexNombreApellido.test(nombre.value)){
-        errores += 'El nombre solo debe contener letras o espacios <br>'
+    } else {
+        if (nombre.value.length < 3 || nombre.value.length > 20){
+            errores += 'El nombre debe tener de 3-20 Caracteres <br>';
+        } else {
+            if (!regexNombreApellido.test(nombre.value)){
+                errores += 'El nombre solo debe contener letras o espacios <br>'
+            }
+        }
     }
 
     // Validaciones para el apellido
     apellido.value = apellido.value.trim();
     if (apellido.value == '' || apellido.value == undefined) {
         errores += 'El apellido no debe estar vacio <br>';
-    }
-    if (apellido.value.length < 3 || apellido.value.length > 20){
-        errores += 'El apellido debe tener de 3-20 Caracteres <br>';
-    }
-    if (!regexNombreApellido.test(apellido.value)){
-        errores += 'El apellido solo debe contener letras o espacios <br>'
+    } else {
+        if (apellido.value.length < 3 || apellido.value.length > 20){
+            errores += 'El apellido debe tener de 3-20 Caracteres <br>';
+        } else {
+            if (!regexNombreApellido.test(apellido.value)){
+                errores += 'El apellido solo debe contener letras o espacios <br>'
+            }
+        }
     }
 
     // Validaciones para el email
     email.value = email.value.trim();
     if (email.value == '' || email.value == undefined){
         errores += 'El email no debe estar vacio <br>'
-    }
-    if (!regexEmail.test(email.value)){
-        errores += 'El email debe seguir el patron nombre@dominio.com <br>'
+    } else {
+        if (!regexEmail.test(email.value)){
+            errores += 'El email debe seguir el patron nombre@dominio.com <br>'
+        }
     }
 
     // Validaciones para telefono
     numero.value = numero.value.trim()
     if (numero.value == '' || numero.value == undefined){
         errores += 'El numero no debe estar vacio <br>'
+    } else {
+        if (numero.value.length != 9){
+            errores += 'El numero debe contener 9 caracteres <br>';
+        } else {
+            if (!regexNumber.test(numero.value)){
+                errores += 'El numero debe seguir el patron 955552222 <br>'
+            }
+        }
     }
-    if (numero.value.length != 9){
-        errores += 'El numero debe contener 9 caracteres <br>';
-    }
-    if (!regexNumber.test(numero.value)){
-        errores += 'El numero debe seguir el patron 955552222 <br>'
-    }
+
     // Validaciones para el mensaje
     if (mensaje.value == '' || mensaje.value == undefined){
         errores += 'El mensaje no debe estar vacio <br>'
+    } else {
+        if (mensaje.value.length > 1000){
+            errores += 'El mensaje no debe superar los 1000 caracteres <br>'
+        }
     }
-    if (mensaje.value.length > 1000){
-        errores += 'El mensaje no debe superar los 1000 caracteres <br>'
-    }
+
     // Finalizacion
     error.innerHTML = errores
     if (errores === "") {

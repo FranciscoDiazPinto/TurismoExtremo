@@ -36,3 +36,8 @@ body {
 .container {
 margin-bottom: 60px; 
 }
+
+.card {
+    max-width: 40%;
+    margin: auto; 
+  }

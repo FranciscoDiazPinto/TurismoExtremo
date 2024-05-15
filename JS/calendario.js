@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
     var calendar = new FullCalendar.Calendar(calendarEl, {
       plugins: ['dayGrid'],
-      // Configura tus opciones de calendario aquí
-      // Por ejemplo, podrías establecer el idioma, el rango de fechas, etc.
+      // opciones de calendario aquí
+      
       locale: 'es',
       selectable: true,
       select: function(info) {

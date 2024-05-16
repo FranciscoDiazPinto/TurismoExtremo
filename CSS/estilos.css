@@ -42,8 +42,8 @@ margin-bottom: 60px;
     margin: auto; 
   }
 
-.full-width-card {
-    max-width: none;
-    margin: 0;
-  }
-  
+h2{
+    font-family: icefont,Arial, Helvetica, sans-serif;
+    color: rgb(75, 175, 255);
+    text-shadow: 0 10px 10px rgb(75,175,255);
+}

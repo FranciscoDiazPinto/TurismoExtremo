@@ -49,6 +49,6 @@ h2{
 }
 
 .card.full-width {
-    max-width: none; 
-    margin: 20;
+    max-width: 100%; 
+    margin: 0;
 }

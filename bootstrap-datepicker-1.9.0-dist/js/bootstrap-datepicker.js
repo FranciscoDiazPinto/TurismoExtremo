@@ -2037,3 +2037,17 @@
 	});
 
 }));
+
+$('#sandbox-container input').datepicker({
+    calendarWeeks: true,
+    todayHighlight: true
+});
+
+$('#sandbox-container div').datepicker({
+    maxViewMode: 2,
+    language: "es",
+    keyboardNavigation: false,
+    calendarWeeks: true,
+    todayHighlight: true,
+    datesDisabled: ['05/06/2024', '05/21/2024']
+});

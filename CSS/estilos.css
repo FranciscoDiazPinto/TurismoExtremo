@@ -47,3 +47,8 @@ h2{
     color: rgb(75, 175, 255);
     text-shadow: 0 10px 10px rgb(75,175,255);
 }
+
+.card.full-width {
+    max-width: none; 
+    margin: 20;
+}

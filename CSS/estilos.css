@@ -41,3 +41,9 @@ margin-bottom: 60px;
     max-width: 40%;
     margin: auto; 
   }
+
+h2{
+    font-family: icefont,Arial, Helvetica, sans-serif;
+    color: rgb(75, 175, 255);
+    text-shadow: 0 10px 10px rgb(75,175,255);
+}

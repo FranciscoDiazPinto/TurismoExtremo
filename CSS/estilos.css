@@ -90,7 +90,8 @@ button {
 }
 
 button:hover {
-    background: #484dd7;
+    background: rgba(75,175,255);
+    box-shadow: 0 0 15px rgba(75,175,255,1);
 }
 
 #temp-div p {

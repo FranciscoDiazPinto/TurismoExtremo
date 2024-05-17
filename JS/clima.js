@@ -4,24 +4,13 @@ navigator.geolocation.getCurrentPosition((position) => {
     console.log( "success" );
     $('#map-container-google-2').append(`<iframe src="https://maps.google.com/maps?q=${position.coords.latitude},${position.coords.longitude}" frameborder="0"
     style="border:0" allowfullscreen></iframe>`)
-    $('#map-container-google-2').append(`<iframe src="https://maps.google.com/maps?q=${position.coords.latitude},${position.coords.longitude}" frameborder="0"
-    style="border:0" allowfullscreen></iframe>`)
 })
 .done(function(data) {
     console.log( "second success" );
     console.log(JSON.stringify(data.main.temp));
     $('#temperatura').append(`Temperatura: ${data.main.temp} c°`)
 })
-
-
-
 .fail(function(error) {
     console.log(error);
 });
-if('geolocation' in navigator) {
-    console.log("U w U")
-    
-} else {
-    console.log("O w O")
-}
 });
